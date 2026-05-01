@@ -159,6 +159,25 @@ const FlyerForm = forwardRef(function FlyerForm(
                 <button type="button" className="print-button" onClick={printFlyer}>
                     Print / Save PDF
                 </button>
+
+                <footer className="form-footer">
+                    <div className="footer-meta">
+                        <a
+                            href="https://github.com/crdunwel/real-estate-flyer-generator"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Source code
+                        </a>
+                    </div>
+
+                    <a
+                        className="footer-cta"
+                        href="mailto:clayton.dunwell@gmail.com?subject=Custom%20software%20request&body=Hi%2C%0A%0AI%20found%20your%20Real%20Estate%20Flyer%20Generator.%0A%0AI%27m%20interested%20in%20something%20similar%20for%20my%20business.%0A%0ABusiness%3A%0AWhat%20I%20want%20to%20improve%3A%0A"
+                    >
+                        Need something like this for your business?
+                    </a>
+                </footer>
             </form>
         </section>
     )

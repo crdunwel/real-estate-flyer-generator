@@ -1,5 +1,7 @@
 /* src/data/defaultFlyerData.js */
 
+const assetBase = import.meta.env.BASE_URL
+
 export const defaultFlyerData = {
     address: '9940 SW 97th Ct',
     city: 'Miami',
@@ -24,7 +26,8 @@ export const defaultFlyerData = {
     agentName: 'Danny Quintero',
     phone: '305-987-2570',
     email: 'skylinenotaryllc@gmail.com',
-    homeImage: '/home.webp',
-    agentImage: '/danny.jpeg',
-    logoImage: '/logo.png',
+
+    homeImage: `${assetBase}home.webp`,
+    agentImage: `${assetBase}danny.jpeg`,
+    logoImage: `${assetBase}logo.png`,
 }

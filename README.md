@@ -1,16 +1,34 @@
-# React + Vite
+# Real Estate Flyer Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple, fast tool to generate a clean, print-ready real estate flyer.
 
-Currently, two official plugins are available:
+Fill out the form → see a live preview → export as PDF.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What this does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Generates a **single-page flyer (8.5" x 11")**
+- Live **WYSIWYG preview**
+- Mobile-friendly editing
+- One-click **Print / Save as PDF**
+- Fully client-side (no backend)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- React
+- Vite
+- Plain CSS (no framework)
+
+---
+
+## Local setup
+
+```bash
+# install deps
+npm install
+
+# run dev server
+npm run dev
