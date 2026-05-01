@@ -1,0 +1,54 @@
+/* src/styles/print.css */
+
+@page {
+    size: Letter;
+    margin: 0;
+}
+
+@media print {
+    html,
+    body,
+    #root {
+        width: 8.5in;
+        height: 11in;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+    }
+
+    .app-shell {
+        display: block;
+        width: 8.5in;
+        height: 11in;
+        padding: 0;
+    }
+
+    .control-panel {
+        display: none;
+    }
+
+    .preview-panel {
+        display: block;
+        min-width: 0;
+        width: 8.5in;
+        height: 11in;
+        padding: var(--page-pad);
+    }
+
+    .flyer {
+        box-shadow: none;
+    }
+}
+
+@media print {
+    .mobile-preview-frame {
+        width: auto;
+        height: auto;
+        aspect-ratio: auto;
+        overflow: visible;
+    }
+
+    .mobile-preview-frame .flyer {
+        transform: none;
+    }
+}

@@ -1,0 +1,239 @@
+/* src/styles/flyer-form.css */
+
+.control-panel {
+    position: sticky;
+    top: 24px;
+    max-height: calc(100vh - 48px);
+    overflow: auto;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 12px 28px var(--shadow);
+    padding: 24px;
+}
+
+.panel-header {
+    margin-bottom: 24px;
+}
+
+.panel-kicker {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.panel-header h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-weight: 650;
+}
+
+.panel-header p:last-child {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.flyer-form,
+.field-group,
+.stack {
+    display: grid;
+}
+
+.flyer-form {
+    gap: 18px;
+}
+
+.field-group {
+    gap: 12px;
+    margin: 0;
+    padding: 0 0 18px;
+    border: 0;
+    border-bottom: 1px solid var(--line-soft);
+}
+
+.field-group legend {
+    margin-bottom: 12px;
+    padding: 0;
+    color: var(--blue-deep);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.field span,
+.form-label {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 650;
+}
+
+.form-input {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid #d7d7d7;
+    background: #ffffff;
+    color: var(--ink);
+    padding: 9px 11px;
+    font-size: 14px;
+    line-height: 1.25;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px var(--blue-soft);
+}
+
+.form-textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.form-grid-location,
+.form-grid-2,
+.form-grid-3,
+.color-input-row {
+    display: grid;
+    gap: 10px;
+}
+
+.form-grid-location {
+    grid-template-columns: 1fr 72px 110px;
+}
+
+.form-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stack {
+    gap: 8px;
+}
+
+.print-button {
+    width: 100%;
+    min-height: 46px;
+    border: 0;
+    background: var(--blue-deep);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: #4467ad;
+}
+
+.color-input-row {
+    grid-template-columns: 44px 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+.color-swatch {
+    width: 44px;
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    background: #ffffff;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.color-value {
+    font-family: var(--mono, ui-monospace, Consolas, monospace);
+    text-transform: uppercase;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1101px) {
+    .control-panel {
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #c1c1c1 #f3f3f3;
+    }
+
+    .control-panel::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .control-panel::-webkit-scrollbar-track {
+        background: #f3f3f3;
+    }
+
+    .control-panel::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 6px;
+    }
+
+    .control-panel::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1100px) {
+    .control-panel {
+        position: static;
+        top: auto;
+        width: 100%;
+        max-width: 430px;
+        max-height: none;
+        overflow: visible;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .control-panel {
+        max-width: none;
+        padding: 16px;
+    }
+
+    .flyer-form {
+        gap: 14px;
+    }
+
+    .field-group {
+        gap: 10px;
+        padding-bottom: 16px;
+    }
+
+    .form-input {
+        min-height: 38px;
+        padding: 8px 10px;
+    }
+
+    .form-grid-location {
+        grid-template-columns: 1fr 64px 96px;
+    }
+
+    .form-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-header {
+        margin-bottom: 20px;
+    }
+}
