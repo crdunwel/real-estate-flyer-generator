@@ -1,0 +1,32 @@
+<!-- public/favicon.svg -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="12" fill="#4f73bf"/>
+
+    <!-- Flyer sheet -->
+    <rect x="13" y="7" width="38" height="50" rx="3" fill="#ffffff"/>
+
+    <!-- Header line -->
+    <rect x="18" y="13" width="28" height="4" rx="1" fill="#4f73bf"/>
+
+    <!-- Image block -->
+    <rect x="18" y="21" width="28" height="18" rx="1.5" fill="#4f73bf"/>
+
+    <!-- House cutout -->
+    <path
+            d="M22 32 L32 23 L42 32 H39 V37 H25 V32 Z"
+            fill="#ffffff"
+    />
+
+    <!-- House window -->
+    <rect x="30" y="31" width="2.5" height="2.5" fill="#4f73bf"/>
+    <rect x="33.5" y="31" width="2.5" height="2.5" fill="#4f73bf"/>
+
+    <!-- Text blocks -->
+    <rect x="18" y="43" width="12" height="5" rx="1" fill="#4f73bf"/>
+    <rect x="33" y="43" width="13" height="2.5" rx="1" fill="#4f73bf"/>
+    <rect x="33" y="48" width="10" height="2.5" rx="1" fill="#4f73bf"/>
+
+    <!-- Bottom line -->
+    <rect x="18" y="53" width="24" height="2.5" rx="1" fill="#4f73bf"/>
+</svg>
