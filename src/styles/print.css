@@ -17,7 +17,9 @@
     }
 
     .app-shell {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 8.5in;
         height: 11in;
         padding: 0;
@@ -28,11 +30,16 @@
     }
 
     .preview-panel {
-        display: block;
-        min-width: 0;
-        width: 8.5in;
-        height: 11in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         padding: var(--page-pad);
+    }
+
+    .mobile-preview-frame {
+        transform: none !important;
     }
 
     .flyer {

@@ -328,26 +328,17 @@
     min-height: 100%;
     display: grid;
     place-items: center;
+    background: #ffffff;
+    padding: 0.12in;
 }
 
-.brand-mark::before {
-    content: "";
-    position: absolute;
-    inset: 0.08in 0;
-    background: radial-gradient(
-            circle at center,
-            color-mix(in srgb, var(--flyer-primary, var(--blue-deep)) 10%, transparent),
-            transparent 70%
-    );
-    pointer-events: none;
-}
 
 .brand-logo {
     position: relative;
     z-index: 1;
     display: block;
-    margin: 0 auto 0.06in;
     object-fit: contain;
-    width: 2.65in;
+    width: 2in;
+    max-height: 1.6in;
 }
 
